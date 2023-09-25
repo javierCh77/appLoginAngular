@@ -1,0 +1,31 @@
+
+<div class="wrapper">
+    <div *ngIf="!loading" class="body">
+        <img class="logo" src="../../../assets/img/user.png" alt="Login">
+        <h1 id="title">Registrarse</h1>
+        <form (ngSubmit)="registrar()" [formGroup]="registrarUsuario">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" formControlName="email" placeholder="name@example.com">
+                <label>Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control"formControlName="password" placeholder="Password">
+                <label> Password</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" formControlName="repetirPassword"placeholder="Repetir Password">
+                <label>Repetir Password</label>
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-success btn-lg mb-3" type="submit">Aceptar</button>
+              </div>
+              <div id="txt">
+                <a routerLink="/login">Volver</a>
+              </div>
+              <!-- update 12/15/2022-->
+        </form>
+    </div>
+    <!-- aqui el spinner para el lading page-->
+    <app-spinner *ngIf="loading"></app-spinner>
+    
+  </div>

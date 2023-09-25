@@ -1,0 +1,29 @@
+
+
+<div class="wrapper">
+    <div *ngIf="!loading" class="body" id="body">
+        <img class="logo" src="../../../assets/img/user.png" alt="Login">
+        
+        <form (ngSubmit)="login()" [formGroup]="loginUsuario" id="form"  action="">
+            <div class="form-floating mb-3">
+                <input type="email" formControlName="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" formControlName="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-success btn-lg mb-3" type="submit">Ingresar</button>
+              </div>
+              <div id="txt">
+                <p>No tienes cuenta <a routerLink="/registrar-usuario">Registrar</a></p>
+                <a routerLink="/recuperar-password"> Recuperar Contraseña</a>
+              </div>
+        </form>
+    </div>
+    <app-spinner *ngIf="loading"></app-spinner>
+</div>
+
+
+

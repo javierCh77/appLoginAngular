@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+html, body{
+background-color: rgb(57, 57, 57);
+color:white;
+height: 100%;
+}
+
+.wrapper{
+    background-color: rgb(57, 57, 57);
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    
+    .body{
+        width: 100%;
+        max-width: 430px;
+        margin:auto;
+        padding: 30px;
+        text-align: center;
+       
+    }
+    
+    .logo{
+    height: 200px;
+    margin-bottom: 15px;
+    }
+    
+    #form{
+        margin-top: 30px;
+    }
+    #title{
+     color:white;
+    }
+    #txt{
+    color:white;
+    }

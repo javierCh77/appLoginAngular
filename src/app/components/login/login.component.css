@@ -1,0 +1,31 @@
+.wrapper{
+background-color: #4c4c4c;
+height: 100%;
+display:flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.body{
+    width: 100%;
+    max-width: 430px;
+    margin:auto;
+    padding: 30px;
+    text-align: center;
+   
+}
+
+.logo{
+width: 50%;
+height: 50%;
+margin-bottom: 15px;
+}
+
+#form{
+    margin-top: 30px;
+}
+
+#txt{
+color:rgb(255, 255, 255);
+}
